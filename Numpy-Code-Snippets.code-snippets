@@ -1,0 +1,578 @@
+{
+    "Generate an Ndarray": {
+        "prefix": "np.array()",
+        "body": "np.array().arange(no)",
+        "description": "creates ndarrays"
+	},
+	"Transpose A Matrix": {
+		"prefix": "np.transpose(",
+		"body":"np.transpose(a, axes=None)[source]",
+		"description": "transposes a matrix"
+	},
+	"Create Zero Matrices": {
+		"prefix": "np.zeros()",
+		"body": "np.zero(first,second)",
+		"description": "Creates A Zero By Zero Matrix"
+	},
+	"Get the Square root of a Matrix": {
+		"prefix": "np.sqrt()",
+		"body": "np.sqrt(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "Gets the Square Root Of a Matrix"
+	},
+	"Get the Exponent of A Matrix": {
+		"prefix": "np.exp()",
+		"body": "np.exp(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "Gets the Exponent of a Matrix"
+	},
+	"Get the Log of a Matrix": {
+		"prefix": "np.log()",
+		"body": "np.log(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "Gets the Log of a Matrix"
+	},
+	"Get the Standard Deviation of a Matrix": {
+		"prefix": "np.std()",
+		"body": "np.std(a, axis=None, dtype=None, out=None, ddof=0, keepdims=<no value>",
+		"description": "Get the Standard Deviation of a Matrix"
+	},
+	"Save A File": {
+		"prefix": "np.savetxt () ",
+		"body": "np.savetxt (‘file.txt’,arr,delimiter= ’  ’) ",
+		"description": "Saves text to a file"
+	},
+	"Load a Text from the File": {
+		"prefix": "np.loadtxt()",
+		"body": "np.loadtxt(fname, dtype=<class 'float'>, comments='#', delimiter=None, converters=None, skiprows=0, usecols=None, unpack=False, ndmin=0, encoding='bytes', max_rows=None",
+		"description": "Loads Text From A File"
+	}
+	,
+	"Creating a Random Matrix": {
+		"prefix": "np.random.randint()",
+		"body": "np.random.randint(low, high=None, size=None, dtype='l')",
+		"description": "Create a Random Matrix"
+	},
+	"Reshape a Matrix": {
+		"prefix": "np.reshape()",
+		"body": "np.reshape(a, newshape, order='C')",
+		"description": "Reshapes A Matrix "
+	},
+	"Create an NdArray": {
+		"prefix": "np.array()",
+		"body": "np.array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0)",
+		"description": "Creates Ndarrays"
+	},
+	"Set a Logic Condition an Array": {
+		"prefix": "np.where()",
+		"body": "np.where(condition[, x, y])",
+		"description": "Set a Logic Condition an Array"
+	},
+	"Find the Unique Values from an array": {
+		"prefix": "np.unique()",
+		"body": "np.unique(ar, return_index=False, return_inverse=False, return_counts=False, axis=None)",
+		"description": "Find the Unique Values From an Array"
+	},
+	"Find all Unique Values in an Array": {
+		"prefix": "np.all()",
+		"body": "np.all(a, axis=None, out=None, keepdims=<no value>)",
+		"description": "Find all of the Unique values from an array"
+	},
+	"Find any Unique Values From an Array":{
+		"prefix": "np.any()",
+		"body": "np.any(a, axis=None, out=None, keepdims=<no value>)",
+		"description": "Find any unique values from an array"
+	},
+	"Dot product of two arrays. Specifically":{
+		"prefix": "np.dot()",
+		"body": "np.dot(a, b, out=None)",
+		"description": "Dot product of two arrays. Specifically"
+	},
+	"Compute the dot product of two or more arrays in a single function call":{
+		"prefix": "np.linalg.multi_dot()",
+		"body": "np.linalg.multi_dot(arrays)",
+		"description": "Compute the dot product of two or more arrays in a single function call"
+	},
+	"Compute the arithmetic mean along the specified axis":{
+		"prefix": "np.mean()",
+		"body": "np.mean(a, axis=None, dtype=None, out=None, keepdims=<class np._globals._NoValue>)",
+		"description": "Compute the arithmetic mean along the specified axis"
+	},
+	"Get the Median Of An Array":{
+		"prefix": "np.median()",
+		"body": "np.median(a, axis=None, out=None, overwrite_input=False, keepdims=False)",
+		"description": "Get the Median Of An Array"
+	},
+	"Create an Copy Of an Array": {
+		"prefix": "np.copy",
+		"body": "np.copy(a, order='K')",
+		"description": "Create an Copy of an Array"
+	},
+	"Sort an array":{
+		"prefix": "np.sort",
+		"body": "np.sort(a, axis=-1, kind='quicksort', order=None)",
+		"description": "Sort an Array"
+	},
+	"Delete A Thing From an Array":{
+		"prefix": "np.delete()",
+		"body": "np.delete(arr, obj, axis=None)",
+		"description": "Delete A Thing From an Array"
+	},
+	"Return a contiguous flattened array":{
+		"prefix": "np.ravel()",
+		"body": "np.ravel(a, order='C')",
+		"description": "Return a contiguous flattened array"
+	},
+	"Stack arrays in sequence horizontally (column wise).":{
+		"prefix": "np.hstack()",
+		"body": "np.hstack(tup)",
+		"description": "Stack arrays in sequence horizontally (column wise)."
+	},
+	"Stack 1-D arrays as columns into a 2-D array.":{
+		"prefix": "np.column_stack()",
+		"body": "np.column_stack(tup)",
+		"description": "Stack 1-D arrays as columns into a 2-D array."
+	},
+	"Adds to Arrays":{
+		"prefix": "np.add()",
+		"body": "np.add(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]) = <ufunc 'add'>",
+		"description": "adds two arrays"
+	},
+	"Divides two arrays":{
+		"prefix": "np.divide()",
+		"body": "np.divide(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "divides two arrays"
+	},
+	"multiplies two arrays":{
+		"prefix": "np.multiply()",
+		"body": "np.multiply(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "multiplies two arrays"
+	},
+	"subtracts two arrays":{
+		"prefix": "np.subtract()",
+		"body": "np.subtract(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": ""
+	},
+	"Get the Sin of an Matrix":{
+		"prefix": "np.sin()",
+		"body": "np.sin(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]",
+		"description": "Get the Sin of an Matrix"
+	},
+	"Return the cumulative sum of the elements along a given axis":{
+		"prefix": "np.cumsum",
+		"body": "np.cumsum(a, axis=None, dtype=None, out=None",
+		"description": "Return the cumulative sum of the elements along a given axis"
+	},
+	"Return Pearson product-moment correlation coefficients":{
+		"prefix": "np.corref()",
+		"body": "np.corrcoef(x, y=None, rowvar=True, bias=<no value>, ddof=<no value>",
+		"description": "Return Pearson product-moment correlation coefficients"
+	},
+	"Gets the Maximum of an Matrix":{
+		"prefix": "np.maximum()",
+		"body": "np.maximum(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "Gets the Maximum of an Matrix"
+	},
+	"New view of array with the same data":{
+		"prefix": "np.ndarray.view()",
+		"body": "np.ndarray.view(dtype=None, type=None)",
+		"description": "New view of array with the same data"
+	},
+	"Returns the Sum of an Matrix":{
+		"prefix": "np.sum()",
+		"body": "np.sum(a, axis=None, dtype=None, out=None, keepdims=<no value>, initial=<no value>)",
+		"description": "Returns the Sum of an Matrix"
+	},
+	"Returns the Minimum of A Matrix":{
+		"prefix": "np.minimum()",
+		"body": "np.minimum(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]",
+		"description": ""
+	},
+	"Return the COS of an Matrix":{
+		"prefix": "np.cos()",
+		"body": "np.cos(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]) ",
+		"description": "Returns the COS of an Matrix"
+	},
+	"Resizes the Matrix":{
+		"prefix": "np.resize()",
+		"body": "np.resize(a, new_shape)",
+		"description": "Resizes an Matrix"
+	},
+	"Append One Array Into Another Array":{
+		"prefix": "np.append()",
+		"body": "np.append(arr, values, axis=None)",
+		"description": "Appends an Array into in another array"
+	},
+	"Insert Something New into an array":{
+		"prefix": "np.insert()",
+		"body": "np.insert(arr, obj, values, axis=None)",
+		"description": "Insert Something New into an Array"
+	},
+	"Stack arrays in sequence vertically (row wise)":{
+		"prefix": "np.vstack()",
+		"body": "np.vstack(tup)",
+		"description": "Stack arrays in sequence vertically (row wise)"
+	},
+	"Concatenates One array into another":{
+		"prefix": "np.concatenate()",
+		"body": "np.concatenate((a1, a2, ...), axis=0, out=None",
+		"description": "Concatenates One array into another"
+	},
+	"Translates slice objects to concatenation along the first axis":{
+		"prefix": "np.r_",
+		"body": "np.r_ = <np.lib.index_tricks.RClass object>",
+		"description": "Translates slice objects to concatenation along the first axis"
+	},
+	"Translates slice objects to concatenation along the second axis.":{
+		"prefix": "np.c_",
+		"body": "np.c_ = <np.lib.index_tricks.CClass object>",
+		"description": "Translates slice objects to concatenation along the second axis."
+	},
+	"Split an array into multiple sub-arrays horizontally (column-wise).":{
+		"prefix": "np.hsplit()",
+		"body": "np.hsplit(ary, indices_or_sections)",
+		"description": "Split an array into multiple sub-arrays horizontally (column-wise)."
+	},
+	"Split an array into multiple sub-arrays vertically (row-wise).":{
+		"prefix": "np.vsplit()",
+		"body": "np.vsplit(ary, indices_or_sections",
+		"description": "Split an array into multiple sub-arrays vertically (row-wise)."
+	},
+	"Return a new array of given shape and type, filled with ones":{
+		"prefix": "np.ones()",
+		"body": "np.ones(shape, dtype=None, order='C')",
+		"description": "Return a new array of given shape and type, filled with ones"
+	},
+	"Return a new array of given shape and type, filled with fill_value.":{
+		"prefix": "np.full()",
+		"body": "np.full(shape, fill_value, dtype=None, order='C')",
+		"description": "Return a new array of given shape and type, filled with fill_value."
+	},
+	"Return a new array of given shape and type, without initializing entries.":{
+		"prefix": "np.empty()",
+		"body": "np.empty(shape, dtype=float, order='C')",
+		"description": "Return a new array of given shape and type, without initializing entries."
+	},
+	"Return a 2-D array with ones on the diagonal and zeros elsewhere.":{
+		"prefix": "np.eye()",
+		"body": "np.eye(N, M=None, k=0, dtype=<class 'float'>, order='C')",
+		"description": "Return a 2-D array with ones on the diagonal and zeros elsewhere."
+	},
+	"Return evenly spaced numbers over a specified interval.":{
+		"prefix": "np.linspace()",
+		"body": "np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None, axis=0)",
+		"description": "Return evenly spaced numbers over a specified interval."
+	},
+	"Return evenly spaced values within a given interval.":{
+		"prefix": "np.arange([start, ]stop, [step, ]dtype=None)",
+		"body": "np.arange([start, ]stop, [step, ]dtype=None)",
+		"description": "Return evenly spaced values within a given interval."
+	},
+	"Load data from a text file, with missing values handled as specified.":{
+		"prefix": "np.genfromtxt()",
+		"body": "np.genfromtxt(fname, dtype=<class 'float'>, comments='#', delimiter=None, skip_header=0, skip_footer=0, converters=None, missing_values=None, filling_values=None, usecols=None, names=None, excludelist=None, deletechars=None, replace_space='_', autostrip=False, case_sensitive=True, defaultfmt='f%i', unpack=None, usemask=False, loose=True, invalid_raise=True, max_rows=None, encoding='bytes')",
+		"description": "Load data from a text file, with missing values handled as specified."
+	},
+	"Calculate the absolute value element-wise.":{
+		"prefix": "np.absolute()",
+		"body": "np.absolute(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "Calculate the absolute value element-wise."
+	},
+	"Convert the input to an array.":{
+		"prefix": "np.asarray()",
+		"body": "np.asarray(a, dtype=None, order=None)",
+		"description": "Convert the input to an array."
+	},
+	"Compute the variance along the specified axis.":{
+		"prefix": "np.var()",
+		"body": "np.var(a, axis=None, dtype=None, out=None, ddof=0, keepdims=<no value>)",
+		"description": "Compute the variance along the specified axis."
+	},
+	"Round an array to the given number of decimals.":{
+		"prefix": "np.round_()",
+		"body": "np.round_(a, decimals=0, out=None)",
+		"description": "Round an array to the given number of decimals."
+	},
+	"The floor of the scalar x is the largest integer i, such that i <= x. It is often denoted as |x|.":{
+		"prefix": "np.floor() ",
+		"body": "np.floor(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]) ",
+		"description": "The floor of the scalar x is the largest integer i, such that i <= x. It is often denoted as |x|."
+	},
+	"The ceil of the scalar x is the smallest integer i, such that i >= x. It is often denoted as |x|.":{
+		"prefix": "np.ceil() ",
+		"body": "np.ceil(x, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj]) ",
+		"description": "The ceil of the scalar x is the smallest integer i, such that i >= x. It is often denoted as |x|."
+	},
+	"First array elements raised to powers from second array, element-wise.":{
+		"prefix": "np.power()",
+		"body": "np.power(x1, x2, /, out=None, *, where=True, casting='same_kind', order='K', dtype=None, subok=True[, signature, extobj])",
+		"description": "First array elements raised to powers from second array, element-wise."
+	},
+	"True if two arrays have the same shape and elements, False otherwise.":{
+		"prefix": "np.array_equal()",
+		"body": "np.array_equal(a1, a2)",
+		"description": "True if two arrays have the same shape and elements, False otherwise."
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+	"":{
+		"prefix": "",
+		"body": "",
+		"description": ""
+	}
+}
